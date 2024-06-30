@@ -1,51 +1,56 @@
-/*  --font-default: "Asap", sans-serif;
-    --font-primary: "Raleway", sans-serif;
-    --color-default: #fafafa;
-    --color-primary: #27a776;
-    scroll-behavior: smooth;
-    background-color: #161718;
-*/
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-body{
+body {
     background-color: #161718;
     font-family: "Asap", sans-serif;
 }
-.navbar-brand, .nav-item{
+
+.navbar-brand,
+.nav-item {
     font-family: "Raleway", sans-serif;
 }
 
-.carousel-item img{
+.carousel-item img {
     filter: brightness(45%);
 }
-#carouselExampleCaptions, .c-item{
+
+#carouselExampleCaptions, .c-item {
     height: 851px;
 }
 
-.c-img{
+.carousel h1, .carousel p{
+    animation-name: slide-in-fwd-center;
+    animation-duration: 2s;
+  }
+
+.c-img {
     height: 100%;
     object-fit: cover;
     filter: brightness(0.6);
 }
-.carousel-caption{
+
+.carousel-caption {
     margin-bottom: 100px;
     font-family: "Raleway", sans-serif;
 }
-#hero{
+
+#hero {
     font-family: "Asap", sans-serif;
 }
-#hero h2{
+
+#hero h2 {
     font-family: "Raleway", sans-serif;
 }
+
 .counts {
     background: url("../img/counts.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 80px 0 60px 0;
     position: relative;
-  }
-  
-  .counts::before {
+}
+
+.counts::before {
     content: "";
     position: absolute;
     background: rgba(17, 17, 17, 0.8);
@@ -53,34 +58,42 @@ body{
     right: 0;
     top: 0;
     bottom: 0;
-  }
-  
-  .counts .title {
+}
+
+.counts .title {
     position: relative;
     color: #fff;
     margin-bottom: 40px;
-  }
-footer{
+}
+
+footer {
     background-color: #161718 !important;
 }
-footer i:hover{
+
+footer i:hover {
     color: #27a776;
     transition: 0.4s;
 }
-#contact, #autor{
+
+#contact,
+#autor {
     padding-top: 120px;
 }
-.services-bg{
+
+.services-bg {
     height: 600px;
 }
-#offer, .testimonials div{
+
+#offer,
+.testimonials div {
     background-color: #161718 !important;
 }
+
 #offer .nav-tabs {
     border: 0;
-  }
-  
-  #offer .nav-link {
+}
+
+#offer .nav-link {
     border: 0 !important;
     padding: 12px 15px;
     transition: 0.3s;
@@ -89,29 +102,59 @@ footer i:hover{
     border-right: 2px solid #157347;
     font-weight: 600;
     font-size: 15px;
-  }
-  
-  #offer .nav-link:hover {
+}
+
+#offer .nav-link:hover {
     color: #157347;
-  }
-  
-  #offer .nav-link.active {
+}
+
+#offer .nav-link.active {
     color: #1a1814;
     background: #157347;
     border-color: #ffffff;
-  }
-  
-  #offer .nav-link:hover {
+}
+
+#offer .nav-link:hover {
     border-color: #157347;
-  }
-  
-  #offer .tab-pane.active {
+}
+
+#offer .tab-pane.active {
     animation: fadeIn 0.5s ease-out;
-  }
-  
-  #offer .details h3 {
+}
+
+#offer .details h3 {
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 20px;
     color: #fff;
+}
+
+#gallery img:hover {
+    filter: brightness(1.25);
+    transition: 0.3s;
+}
+
+@-webkit-keyframes slide-in-fwd-center {
+    0% {
+      -webkit-transform: translateZ(-1400px);
+              transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+@keyframes slide-in-fwd-center {
+    0% {
+      -webkit-transform: translateZ(-1400px);
+              transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
   }
