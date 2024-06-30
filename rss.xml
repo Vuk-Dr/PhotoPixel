@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+	<channel>
+		<title>Obaveštenja i popusti</title>
+		<link>https://vuk-dr.github.io/PhotoPixel/index.html</link>
+		<description>Letnji popusti na venčanja</description>
+		<item>
+			<title>Kontaktirajte nas</title>
+			<link>https://vuk-dr.github.io/PhotoPixel/contact.html</link>
+			<description>Ostvarite uspomene za ceo život!</description>
+		</item>
+	</channel>
+</rss>
