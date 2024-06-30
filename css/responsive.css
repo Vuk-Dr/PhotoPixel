@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px){
+    .w-25{
+        width: 30% !important;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .w-25{
+        width: 35% !important;
+    }
+    #carouselExampleCaptions, .c-item{
+        height: 751px;
+    }
+    .services-bg{
+        height: 500px;
+    }
+}
+@media screen and (max-width: 340px){
+    .w-25{
+        width: 50% !important;
+    }
+    .btn-outline-success{
+        padding: 2px;
+    }
+    .offcanvas  .offcanvas-body{
+        padding: 5px;
+    }
+    header img{
+        display: none;
+    }
+}
